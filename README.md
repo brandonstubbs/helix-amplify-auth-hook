@@ -5,6 +5,8 @@ This is a small project to show you how to write an Authentication hook using
 using AWS Amplify as the authentication provider. However, this hook could
 be used with any other provider, such as Firebase.
 
+![Demo gif](./doc/helix-auth-hook.gif)
+
 ## AWS Cognito Pool
 In order for you to run this demo, you will need to have an [AWS Cognito](https://aws.amazon.com/cognito/)
 authentication pool setup with a user to test with.
