@@ -1,0 +1,16 @@
+{:deps
+ {:aliases [:cljs]}
+
+ :builds
+ {:app
+  {:target     :browser
+   :output-dir "public/js"
+   :asset-path "/js"
+   :modules    {:main {:init-fn auth.app/init}}
+   :devtools   {:http-root       "public"
+                :http-port       8888
+                :reload-strategy :full
+                :preloads        [devtools.preload
+                                  auth.dev]}
+   :js-options {:resolve {"http2"   false
+                          "aws-crt" false}}}}}

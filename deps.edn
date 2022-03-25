@@ -1,0 +1,11 @@
+{:paths
+ ["src"]
+
+ :aliases
+ {:cljs
+  {:extra-deps
+   {lilactown/helix      {:git/url "https://github.com/lilactown/helix.git"
+                          :sha     "d2cb7b3c853dc17e829d70520aafba1890c9fd25"}
+    funcool/promesa      {:mvn/version "8.0.450"}
+    binaryage/devtools   {:mvn/version "1.0.4"}
+    thheller/shadow-cljs {:mvn/version "2.17.8"}}}}}
