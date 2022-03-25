@@ -44,8 +44,7 @@
                 (p/err set-error
                   (p/let [user (.signIn Auth username password)
                           _    (p/finally user
-                                 #((set-error nil)
-                                   (set-loading false)))]
+                                 (fn [] (set-error nil) (set-loading false)))]
                     (-> user (format-user) (set-user)))))
      :logout  (fn []
                 (set-error nil)
