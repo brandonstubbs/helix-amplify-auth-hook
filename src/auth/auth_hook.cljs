@@ -35,7 +35,7 @@
     (use-effect []
       (p/err reset-user
         (p/then (.currentAuthenticatedUser Auth)
-          #(-> % user (format-user) (set-user)))))
+          #(-> % (format-user) (set-user)))))
     {:user    user
      :loading loading
      :error   error
